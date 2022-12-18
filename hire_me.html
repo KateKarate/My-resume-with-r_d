@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hire me</title>
+    <style>
+        label {
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Hire me</h1>
+    <h2>Contact information</h2>
+
+
+
+    <table border="1" cellspacing="0" cellpadding="5px">
+        <tr>
+            <th>Phone</th>
+            <td>+310638970102</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>Amsterdam, the Netherlands</td>
+        </tr>
+    </table>
+
+<form action="/hire_me.html" method="get">
+
+    <fieldset>
+        <legend>Contact form</legend>
+        <br>
+        <label>
+            E-mail: 
+            <input 
+              type="email" 
+              name="email"
+              required
+              placeholder="Enter your email" />
+        </label>
+        <br>
+        <br>
+        <label>
+            Description:
+            <textarea 
+              name="Description" 
+              cols="40" 
+              rows="5">
+            </textarea>
+        </label>
+        <br>
+        <br>
+        <label>
+            Work type:
+            <select name="work-type">
+                <option value="full-time">Full-time</option>
+                <option value="part-time">Part-time</option>
+                <option value="remote">Remote position</option>
+                <option value="project">One time project</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <input type="submit" value="Hire me">
+    </fieldset>
+</form>
+
+</body>
+</html>
