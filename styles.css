@@ -1,0 +1,35 @@
+.resume {
+    line-height: 1.5;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.name {
+    font-style: italic;
+}
+
+.position {
+    font-weight: bold;
+}
+
+.table-heading {
+    text-transform: uppercase;
+}
+
+.link {
+    color: #00f;
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: none;
+}
+
+.link:visited {
+    color: #005;
+    text-decoration: underline;
+}
+
+.skills {
+    list-style-type: square;
+}
