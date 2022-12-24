@@ -2,19 +2,24 @@
     line-height: 1.5;
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
 }
 
 .name {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
+    border-bottom: thin solid rgb(219, 215, 215);
 }
 
 .position {
     font-weight: bold;
+    border-bottom: thin solid rgb(219, 215, 215);
 }
 
 .table-heading {
     text-transform: uppercase;
-}
+    background-color: rgb(219, 215, 215);
+    }
 
 .link {
     color: #00f;
@@ -30,6 +35,21 @@
     text-decoration: underline;
 }
 
+.work-experience {
+    background-color: #f7f7f7;
+}
+
 .skills {
     list-style-type: square;
+    border-bottom: thin solid rgb(219, 215, 215);
+}
+
+.achievements {
+    border-bottom: thin solid rgb(219, 215, 215);
+}
+
+.profile-picture {
+    border: 2px solid;
+    border-color: rgb(37, 37, 112);
+    padding: 10px;
 }
