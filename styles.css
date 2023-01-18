@@ -1,66 +1,87 @@
 .resume {
-    line-height: 1.5;
-    color: #333;
+    color: #263036;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 40px;
-}
-
-.name {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
+    display: flex;
     margin: 0;
 }
 
-.position {
+.side-column {
+    background-color: #00919C;
+    height: auto;
+    flex: 1;
+    font-weight: 600;
+}
+
+.side-text {
+    padding: 20px;
+}
+
+.side-heading {
+    font-size: 32px;
+    border-bottom: 6px solid #1E1E1E;
+    padding: 5px 0;
+}
+
+.side-info {
+    padding: 0 0 10px 0;
+}
+
+.main-column {
+    flex: 3;
+    padding: 0 55px;
+}
+
+.main-heading {
+    font-size: 36px;
+    border-bottom: 5px solid #000000;
+    padding: 20px 0;
+}
+
+.summary,
+.skills {
     font-weight: bold;
 }
 
-.table-heading {
-    text-transform: uppercase;
-    background-color: rgb(219, 215, 215);
-    }
+.skills-info {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
 
-.time-period {
-    text-align: center;
+.profile-picture {
+    width: 100%;
+}
+
+.name {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: white;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 40px;
 }
 
 .link {
-    color: #00f;
+    color: #1C2E8C;
+    ;
     text-decoration: underline;
+}
+
+.side-link.link {
+    text-decoration: none;
+}
+
+.side-link.link:hover {
+    color: white;
+    text-decoration: none;
 }
 
 .link:hover {
     text-decoration: none;
+    color: rgb(37, 32, 32);
 }
 
 .link:visited {
     color: #005;
     text-decoration: underline;
-}
-
-.work-experience {
-    background-color: #f7f7f7;
-    width: 100%;
-}
-
-.skills {
-    list-style-type: square;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-}
-
-.profile-picture {
-    border: 1px solid;
-    border-color: rgb(37, 37, 112);
-    padding: 5px;
-    width: 100px;
-    height: 100px;
-    float: right;
-}
-
-.border-look {
-    border-bottom: thin solid rgb(219, 215, 215);   
 }
