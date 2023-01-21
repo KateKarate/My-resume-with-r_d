@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+input,
+select,
+textarea {
+    appearance: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: IBM Plex Sans, Helvetica, sans-serif;
+    color: #52575C;
+    background-color: #F8FAFC;
+}
+
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 70%;
+    font-family: IBM Plex Sans, Helvetica, sans-serif;
+    color: #52575C;
+}
+
+.title,
+.contacts {
+    padding: 10px 0;
+}
+
+table {
+    padding: 10px 0;
+}
+
+.table {
+    border: solid 1px #52575C;
+    padding: 10px;
+}
+
+.table.phone,
+.table.phone-number {
+    border-bottom: none;
+}
+
+.table.phone,
+.table.address {
+    border-right: none;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+label {
+    width: 150px;
+    display: block;
+    margin: 20px;
+}
+
+fieldset {
+    border-radius: 10px;
+    border-color: #52575C;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+input[type="email"]:invalid {
+    border: solid 1px #ED0131;
+}
+
+.error {
+    display: none;
+    color: #ED0131;
+    font-size: 12px;
+    margin: 0;
+}
+
+.email:invalid+.error {
+    display: block;
+}
+
+::placeholder {
+    color: #B8BCCA;
+}
+
+textarea {
+    min-width: 30rem;
+    min-height: 10rem;
+}
+
+input[type="submit"] {
+    height: 48px;
+    width: 100px;
+    left: 0px;
+    top: 0px;
+    border-radius: 6px;
+    padding: 4px 16px 4px 16px;
+    border: 1px solid #0048D9;
+    background-color: white;
+    color: #0048D9;
+    margin-left: 20px;
+}
+
+input[type="submit"]:hover {
+    background-color: #F8FAFC;
+    cursor: pointer;
+}
+
+select {
+    cursor: pointer;
+    background-image: url('./chevron-down.png') no-repeat center right;
+}
