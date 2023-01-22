@@ -27,12 +27,24 @@ textarea {
     background-color: #F8FAFC;
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+    outline: solid 1px #0048D9;
+}
+
 body {
-    max-width: 1024px;
-    margin: 0 auto;
-    width: 70%;
     font-family: IBM Plex Sans, Helvetica, sans-serif;
-    color: #52575C;
+    color: #52575C; 
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1024px;
+    width: 100%;
 }
 
 .title,
