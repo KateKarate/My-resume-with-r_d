@@ -1,8 +1,9 @@
 .resume {
-    color: #263036;
-    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-text-scrollbar-main);
+    font-family: var(--font-family-base);
     display: flex;
     margin: 0;
+    background-color: var(--color-background-main);
 }
 
 ::-webkit-scrollbar {
@@ -10,12 +11,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #263036;
+    background: var(--color-text-scrollbar-main);
     border-radius: 10px;
 }
 
 .side-column {
-    background-color: #00919C;
+    background-color: var(--color-background-side);
     width: 350px;
     height: 100%;
     flex: 1;
@@ -38,33 +39,33 @@
 }
 
 .side-text {
-    padding: 20px;
+    padding: var(--padding-side-blocks);
 }
 
 .side-heading {
-    font-size: 32px;
-    border-bottom: 6px solid #1E1E1E;
-    padding: 5px 0;
+    font-size: var(--font-size-side-heading);
+    border-bottom: 6px solid var(--color-side-heading-border);
+    padding: var(--padding-side-heading);
 }
 
 .side-info {
-    padding: 0 0 10px 0;
+    padding: var(--padding-side-info);
 }
 
 footer {
-    padding: 20px;
+    padding: var(--padding-side-blocks);
 }
 
 .main-column {
     flex: 3;
-    padding: 0 55px;
+    padding: var(--padding-main-column);
     margin-left: 350px;
 }
 
 .main-heading {
-    font-size: 36px;
-    border-bottom: 5px solid #000000;
-    padding: 20px 0;
+    font-size: var(--font-size-main-heading);
+    border-bottom: 5px solid var(--color-main-heading-border);
+    padding: var(--padding-main-heading);
 }
 
 .summary,
@@ -83,16 +84,16 @@ footer {
 }
 
 .name {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-    color: white;
-    padding: 20px;
+    font-family: var(--font-family-side-header-footer);
+    font-style: var(--font-style-side-header-footer);
+    color: var(--color-side-header-footer);
+    padding: var(--padding-side-blocks);
     font-weight: 600;
-    font-size: 40px;
+    font-size: var(--font-size-side-header);
 }
 
 .link {
-    color: #1C2E8C;
+    color: var(--color-link);
     text-decoration: underline;
 }
 
@@ -101,29 +102,30 @@ footer {
 }
 
 .side-link.link:hover {
-    color: white;
+    color: var(--color-side-link-hover);
     text-decoration: none;
 }
 
 .hire-me {
-    color: #fff;
+    color: var(--color-side-header-footer);
     text-decoration: none;
     font-weight: 600;
-    font-size: 30px;
+    font-size: var(--font-size-side-footer);
     display: flex;
-    font-style: italic;
+    font-family: var(--font-family-side-header-footer);
+    font-style: var(--font-style-side-header-footer);
 }
 
 .hire-me:hover {
-    color: #1C2E8C;
+    color: var(--color-side-footer-hover);
 }
 
 .link:hover {
     text-decoration: none;
-    color: rgb(37, 32, 32);
+    color: var(--color-main-link-hover);
 }
 
 .link:visited {
-    color: #005;
+    color: var(--color-link-visited);
     text-decoration: underline;
 }
