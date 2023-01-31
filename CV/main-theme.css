@@ -1,8 +1,8 @@
 .main-theme {
     /* colors */
-    --color-background-side: #00919C;
+    --color-background-side: #86A3B4;
     --color-text-scrollbar-main: #263036;
-    --color-link: #1C2E8C; 
+    --color-link-last-name: #1C2E8C; 
     --color-side-link-hover: #fff;
     --color-main-link-hover: rgb(37, 32, 32);
     --color-link-visited: #005; 
@@ -17,12 +17,12 @@
     --font-size-main-heading: 36px;
     --font-size-side-heading: 32px;
 
-    --font-family-base: Arial, Helvetica, sans-serif;
+    --font-family-base:'IBM Plex Sans', sans-serif;
     --font-family-side-header-footer: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --font-style-side-header-footer: italic;
 
     /* deviation */
-    --padding-side-blocks: 20px;
+    --padding-side-blocks: 30px;
     --padding-side-info: 0 0 10px 0;
     --padding-side-heading: 5px 0;
     --padding-main-heading: 20px 0;

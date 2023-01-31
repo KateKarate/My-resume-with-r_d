@@ -1,41 +1,34 @@
 .resume {
+    display: flex;
+    background-color: var(--color-background-main);
     color: var(--color-text-scrollbar-main);
     font-family: var(--font-family-base);
-    display: flex;
     margin: 0;
-    background-color: var(--color-background-main);
 }
 
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--color-text-scrollbar-main);
-    border-radius: 10px;
-}
+/* side section */
 
 .side-column {
     background-color: var(--color-background-side);
-    width: 350px;
-    height: 100%;
     flex: 1;
     font-weight: 600;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
 }
 
-.scrollbox {
-    overflow: auto;
-    visibility: hidden;
+.name {
+    font-family: var(--font-family-side-header-footer);
+    font-style: var(--font-style-side-header-footer);
+    color: var(--color-side-header-footer);
+    padding: var(--padding-side-blocks);
+    font-weight: 600;
+    font-size: var(--font-size-side-header);
 }
 
-.scrollbox-inner, .scrollbox:hover {
-    visibility: visible;
+.last-name {
+    color: var(--color-link-last-name); 
+}
+
+.profile-picture {
+    width: 100%;
 }
 
 .side-text {
@@ -56,10 +49,11 @@ footer {
     padding: var(--padding-side-blocks);
 }
 
+/* main section */
+
 .main-column {
-    flex: 3;
+    flex: 4;
     padding: var(--padding-main-column);
-    margin-left: 350px;
 }
 
 .main-heading {
@@ -79,21 +73,10 @@ footer {
     width: 60%;
 }
 
-.profile-picture {
-    width: 100%;
-}
-
-.name {
-    font-family: var(--font-family-side-header-footer);
-    font-style: var(--font-style-side-header-footer);
-    color: var(--color-side-header-footer);
-    padding: var(--padding-side-blocks);
-    font-weight: 600;
-    font-size: var(--font-size-side-header);
-}
+/* links */
 
 .link {
-    color: var(--color-link);
+    color: var(--color-link-last-name);
     text-decoration: underline;
 }
 
@@ -111,7 +94,6 @@ footer {
     text-decoration: none;
     font-weight: 600;
     font-size: var(--font-size-side-footer);
-    display: flex;
     font-family: var(--font-family-side-header-footer);
     font-style: var(--font-style-side-header-footer);
 }
@@ -129,3 +111,46 @@ footer {
     color: var(--color-link-visited);
     text-decoration: underline;
 }
+
+@media screen and (max-width: 550px) {
+    .resume {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-column {
+        padding: 0 30px;
+    }
+
+    .name {
+        padding: 0 50px;
+    }
+
+    .skills-info {
+        width: 100%;
+    }
+
+    p {
+        margin: 0;
+    }
+    
+}
+/*
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-text-scrollbar-main);
+    border-radius: 10px;
+}
+
+.scrollbox {
+    overflow: auto;
+    visibility: hidden;
+}
+
+.scrollbox-inner, .scrollbox:hover {
+    visibility: visible;
+}
+*/
