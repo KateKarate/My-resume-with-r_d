@@ -15,8 +15,6 @@
 }
 
 .name {
-    font-family: var(--font-family-side-header-footer);
-    font-style: var(--font-style-side-header-footer);
     color: var(--color-side-header-footer);
     padding: var(--padding-side-blocks);
     font-weight: 600;
@@ -94,8 +92,6 @@ footer {
     text-decoration: none;
     font-weight: 600;
     font-size: var(--font-size-side-footer);
-    font-family: var(--font-family-side-header-footer);
-    font-style: var(--font-style-side-header-footer);
 }
 
 .hire-me:hover {

@@ -17,9 +17,7 @@
     --font-size-main-heading: 36px;
     --font-size-side-heading: 32px;
 
-    --font-family-base:'IBM Plex Sans', sans-serif;
-    --font-family-side-header-footer: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --font-style-side-header-footer: italic;
+    --font-family-base:'Inter', sans-serif;
 
     /* deviation */
     --padding-side-blocks: 30px;
