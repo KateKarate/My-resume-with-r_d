@@ -11,18 +11,6 @@
     --color-side-header-footer: #fff;
     --color-side-footer-hover: #1C2E8C;
 
-    /* font */
-    --font-size-side-header: 40px; 
-    --font-size-side-footer: 30px; 
-    --font-size-main-heading: 36px;
-    --font-size-side-heading: 32px;
-
+    /*font*/
     --font-family-base:'Inter', sans-serif;
-
-    /* deviation */
-    --padding-side-blocks: 30px;
-    --padding-side-info: 0 0 10px 0;
-    --padding-side-heading: 5px 0;
-    --padding-main-heading: 20px 0;
-    --padding-main-column: 0 55px;
 }

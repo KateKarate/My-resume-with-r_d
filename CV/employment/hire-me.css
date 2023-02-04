@@ -25,6 +25,7 @@ textarea {
     font-family: IBM Plex Sans, Helvetica, sans-serif;
     color: #52575C;
     background-color: #F8FAFC;
+    width: 460px;
 }
 
 input:focus,
@@ -79,6 +80,7 @@ label {
     width: 150px;
     display: block;
     margin: 20px;
+    line-height: 24px;
 }
 
 fieldset {
@@ -94,6 +96,12 @@ legend {
 
 input[type="email"]:invalid {
     border: solid 1px #ED0131;
+}
+
+.required::after {
+    content: " *";
+    color: #ED0131;
+    font-size: 16px;
 }
 
 .error {
@@ -112,7 +120,7 @@ input[type="email"]:invalid {
 }
 
 textarea {
-    min-width: 30rem;
+    min-width: 460px;
     min-height: 10rem;
 }
 
@@ -136,5 +144,7 @@ input[type="submit"]:hover {
 
 select {
     cursor: pointer;
-    background-image: url('./chevron-down.png') no-repeat center right;
+    background: url('./chevron-down.png') no-repeat center right .4rem;
+    background-color: #F8FAFC;
+    width: 480px;
 }

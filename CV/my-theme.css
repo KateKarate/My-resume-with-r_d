@@ -12,20 +12,6 @@
     --color-side-header-footer: #94D2BD;
     --color-side-footer-hover: #EE9B00;
 
-    /* font */
-    --font-size-side-header: 40px; 
-    --font-size-side-footer: 30px; 
-    --font-size-main-heading: 36px;
-    --font-size-side-heading: 32px;
-
     --font-family-base: Arial, Helvetica, sans-serif;
     --font-family-side-header-footer: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --font-style-side-header-footer: italic;
-
-    /* deviation */
-    --padding-side-blocks: 20px;
-    --padding-side-info: 0 0 10px 0;
-    --padding-side-heading: 5px 0;
-    --padding-main-heading: 20px 0;
-    --padding-main-column: 0 55px;
 }
