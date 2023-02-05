@@ -37,16 +37,32 @@ textarea:focus {
 body {
     font-family: IBM Plex Sans, Helvetica, sans-serif;
     color: #52575C; 
+    position: relative;
 }
 
 .container {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     max-width: 1024px;
     width: 100%;
+    animation: page-load 1.5s;
 }
+
+@keyframes page-load {
+    from {
+        transform: scale(2);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
 
 .title,
 .contacts {
@@ -74,6 +90,8 @@ table {
 
 fieldset {
     padding: 20px;
+    border-radius: 10px;
+    border-color: #52575C;
 }
 
 label {
@@ -81,11 +99,6 @@ label {
     display: block;
     margin: 20px;
     line-height: 24px;
-}
-
-fieldset {
-    border-radius: 10px;
-    border-color: #52575C;
 }
 
 legend {

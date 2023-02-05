@@ -28,6 +28,19 @@
     flex: 1;
     font-weight: 600;
     box-shadow: 1px 0px 13px 7px #504B4B40;
+    animation: down-to-up 1.5s linear;
+    z-index: 1;
+}
+
+@keyframes down-to-up {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 
 .name {
@@ -43,6 +56,7 @@
 
 .profile-picture {
     width: 100%;
+    transition: 1.5s;
 }
 
 .profile-picture:hover { 
@@ -73,6 +87,8 @@ footer {
 .main-column {
     flex: 4;
     padding: var(--padding-main-column);
+    animation: down-to-up 1.5s linear 0.5s forwards;
+    opacity: 0;
 }
 
 .main-heading {
@@ -94,6 +110,7 @@ footer {
 
 .previous-experience {
     opacity: 70%;
+    transition: 2s;
 }
 
 .previous-experience:hover {
