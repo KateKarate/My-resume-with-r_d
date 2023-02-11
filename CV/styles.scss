@@ -12,9 +12,9 @@
     --padding-main-heading: 20px 0;
     --padding-main-column: 0 55px;
 }
-
+@import 'my-theme.scss';
 @import 'main-theme.scss';
-// @import 'my-theme.scss';
+
 
 .resume {
     display: flex;
