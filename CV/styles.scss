@@ -69,11 +69,11 @@
 .profile-picture {
     width: 100%;
     transition: 1.5s;
+}
 
-    &:hover {
-        transform: scale(1.7) translate(20%, 40px);
-        box-shadow: 10px 10px 16px 0px #00000040;
-    }
+.inlarge {
+    transform: scale(1.7) translate(20%, 40px);
+    box-shadow: 10px 10px 16px 0px #00000040;
 }
 
 .side-text {
@@ -107,6 +107,12 @@ footer {
     font-size: var(--font-size-main-heading);
     border-bottom: 5px solid $color-main-heading-border;
     padding: var(--padding-main-heading);
+}
+
+.letter {
+    border-radius: 3px;
+    border: 1px solid #000;
+    padding: 5px;
 }
 
 .summary,

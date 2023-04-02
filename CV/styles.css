@@ -60,7 +60,8 @@
   width: 100%;
   transition: 1.5s;
 }
-.profile-picture:hover {
+
+.inlarge {
   transform: scale(1.7) translate(20%, 40px);
   box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.2509803922);
 }
@@ -99,6 +100,12 @@ footer {
   font-size: var(--font-size-main-heading);
   border-bottom: 5px solid #000000;
   padding: var(--padding-main-heading);
+}
+
+.letter {
+  border-radius: 3px;
+  border: 1px solid #000;
+  padding: 5px;
 }
 
 .summary,
