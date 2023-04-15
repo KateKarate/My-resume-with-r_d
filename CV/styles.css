@@ -127,6 +127,10 @@ footer {
   opacity: 100%;
 }
 
+.repositories {
+  margin-bottom: 100px;
+}
+
 /* links */
 .link {
   color: #1C2E8C;
