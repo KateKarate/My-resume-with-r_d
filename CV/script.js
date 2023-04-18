@@ -53,10 +53,18 @@ function createElement(data) {
     a.setAttribute('href', data.html_url);
     a.setAttribute('target', '_blank');
     a.style.color = '#1C2E8C';
-    a.style.lineHeight = '10px';
-    a.style.:hover.color = '1E1E1E';
-    a.style.:hover.textDecoration = 'none';
+    a.style.marginBottom = '10px';
+    a.style.display = 'block';
 
+    a.addEventListener('mouseover', function() {
+        a.style.color = '#1E1E1E';
+        a.style.textDecoration = 'none';
+    });
+
+    a.addEventListener('mouseout', function() {
+        a.style.color = '#1C2E8C';
+        a.style.textDecoration = 'underline';
+    });
 
     repository.appendChild(a);
 
@@ -80,9 +88,6 @@ function handleData(data) {
     })
 }
 
-fetch(url) {
-    .then(response => response.json());
+fetch(url)
+    .then(response => response.json())
     .then(handleData);
-}
-
-
