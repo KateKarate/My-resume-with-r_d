@@ -1,3 +1,27 @@
+class GitHubAPI {
+    constructor(token, username) {
+        this.token = token;
+        this.username = username;
+    }
+
+    async getRepos() {
+        const response = await fetch(`https://api.github.com/users/${this.username}/repos`, {
+            headers: {
+                'Authorization': `token ${this.token}`
+            }
+        });
+        const data = await response.json();
+        return data;
+    }
+}
+
+const api = new GitHubAPI('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', 'KateKarate');
+api.getRepos().then(data => {
+    data.forEach(d => {
+        createElement(d);
+    })
+});
+
 const makeLarge = document.querySelector(".profile-picture");
 
 makeLarge.addEventListener("click", () => {
@@ -12,36 +36,34 @@ const navE = document.getElementById("e");
 
 document.addEventListener("keydown", e => {
     if (e.key.toLowerCase() === "a") {
-        navA.scrollIntoView({behavior: "smooth"});
+        navA.scrollIntoView({ behavior: "smooth" });
     }
 });
 
 document.addEventListener("keydown", e => {
     if (e.key.toLowerCase() === "b") {
-        navB.scrollIntoView({behavior: "smooth"});
+        navB.scrollIntoView({ behavior: "smooth" });
     }
 });
 
 document.addEventListener("keydown", e => {
     if (e.key.toLowerCase() === "c") {
-        navC.scrollIntoView({behavior: "smooth"});
+        navC.scrollIntoView({ behavior: "smooth" });
     }
 });
 
 document.addEventListener("keydown", e => {
     if (e.key.toLowerCase() === "d") {
-        navD.scrollIntoView({behavior: "smooth"});
+        navD.scrollIntoView({ behavior: "smooth" });
     }
 });
 
 document.addEventListener("keydown", e => {
     if (e.key.toLowerCase() === "e") {
-        navD.scrollIntoView({behavior: "smooth"});
+        navD.scrollIntoView({ behavior: "smooth" });
     }
 });
 
-
-const url = 'https://api.github.com/users/KateKarate/repos';
 const repositories = document.querySelector('.repositories');
 
 function createElement(data) {
@@ -56,19 +78,19 @@ function createElement(data) {
     a.style.marginBottom = '10px';
     a.style.display = 'block';
 
-    a.addEventListener('mouseover', function() {
+    a.addEventListener('mouseover', function () {
         a.style.color = '#1E1E1E';
         a.style.textDecoration = 'none';
     });
 
-    a.addEventListener('mouseout', function() {
+    a.addEventListener('mouseout', function () {
         a.style.color = '#1C2E8C';
         a.style.textDecoration = 'underline';
     });
 
     repository.appendChild(a);
 
-    if(data.description) {
+    if (data.description) {
         const desc = document.createElement('div');
         desc.textContent = data.description;
 
@@ -77,17 +99,3 @@ function createElement(data) {
 
     repositories.appendChild(repository);
 }
-
-function handleData(data) {
-    if(!data.length) {
-        return
-    }
-
-    data.forEach(d => {
-        createElement(d);
-    })
-}
-
-fetch(url)
-    .then(response => response.json())
-    .then(handleData);
